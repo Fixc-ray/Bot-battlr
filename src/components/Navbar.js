@@ -19,14 +19,11 @@ const Navbar = () => {
               <Link to="/" className="text-orange-500 hover:text-yellow-500">
                 All Bots
               </Link>
-              <Link
-                to="/add"
-                className="text-orange-500 hover:text-yellow-500"
-              >
+              <Link to="/add" className="text-orange-500 hover:text-yellow-500">
                 Add A New Bot
               </Link>
               <Link
-                to="/Contact"
+                to="/my bots"
                 className="text-orange-500 hover:text-yellow-500"
               >
                 My Bot Army

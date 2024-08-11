@@ -2,7 +2,11 @@ import React from 'react'
 
 function MyBots() {
   return (
-    <div>My</div>
+    <div>
+        <h2 className="text-2xl font-bold text-center text-gray-800 mt-20">
+        MY BOT 
+      </h2>
+    </div>
   )
 }
 
