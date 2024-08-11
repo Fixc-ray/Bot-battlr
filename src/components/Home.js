@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Details from "./Details";
 
 function Home() {
-  const url = "http://localhost:3000/bots";
+  const url = "https://bot-batllr-backend.vercel.app/bots";
   const [bots, setBots] = useState([]);
   const [selectedClass, setSelectedClass] = useState("");
 

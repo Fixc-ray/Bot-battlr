@@ -14,7 +14,6 @@ function Add() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Creating the new bot object with the form data
     const newBot = {
       name,
       health: parseInt(health),
@@ -25,8 +24,7 @@ function Add() {
       avatar_url,
     };
 
-    // Sending the new bot data to the backend
-    fetch("http://localhost:3000/bots", {
+    fetch("https://bot-batllr-backend.vercel.app/bots", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,14 +33,13 @@ function Add() {
     })
       .then((res) => res.json())
       .then((bot) => {
-        // Adding the newly created bot to the state to update the UI
+        
         setBots([bot, ...bots]);
       })
       .catch((error) => {
         console.error("Error adding bot:", error);
       });
 
-    // Resetting the form fields
     setName("");
     setHealth("");
     setDamage("");
