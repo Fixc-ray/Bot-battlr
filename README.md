@@ -1,71 +1,46 @@
-# Getting Started with Create React App
+# Bot Battlr
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Bot Battlr**, the ultimate web app for building and managing your own custom Bot Army! Developed by a galactic web developer, this app allows you to browse through a collection of bots and enlist them in your own army. Use your strategy to build a powerful team, and manage them by releasing or discharging them when necessary.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+As a user, you have the following capabilities:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Add Bots to Your Army
+- **Click to Enlist**: Add an individual bot to your army by clicking on it. Once selected, the bot will be added to the `YourBotArmy` component.
+- **Unique Enlistment**: Each bot can be enlisted only **once** into your army. The bot will still appear in the `BotCollection` even after enlisting.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Manage Your Army
+- **Release a Bot**: You can release a bot from your army by clicking on it in the `YourBotArmy` component. Once released, the bot disappears from your army but remains available in the `BotCollection` for future enlistment.
 
-### `npm test`
+### 4. Discharge a Bot Permanently
+- **Permanent Removal**: Discharge a bot from your service forever by clicking the red button marked with an "x". This action will:
+  - Delete the bot from the backend.
+  - Remove the bot from the `YourBotArmy` on the frontend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+- **Home.js**: The main container component, responsible for fetching bots and managing their states.
+ Displays all available bots that can be enlisted in the army.
+- **MyBots.js**: Displays the bots currently enlisted in your army.
+- **Details.js**: Shows the detailed view of each bot.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Viewing Bots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- All bots are listed in the `Home` component. Click on any bot to enlist it in your army.
 
-### `npm run eject`
+### Managing Your Army
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Your enlisted bots appear in the `MyBots` component. 
+- Click on a bot to release it from your army, or click the "x" button to discharge it permanently.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Discharge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Discharging a bot removes it completely from the app, both frontend and backend.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Bot-battlr
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
