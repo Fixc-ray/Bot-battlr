@@ -26,7 +26,7 @@ function Home() {
     : bots;
 
   const DisplayBot = filteredBots.map((bot) => (
-    <Details key={bot.id} bots={bot} onDelete={handleDelete}/>
+    <Details key={bot.id} bots={bot} onDelete={handleDelete} />
   ));
   return (
     <div className="">
@@ -47,6 +47,10 @@ function Home() {
           <option value="Assault">Assault</option>
           <option value="Defender">Defender</option>
           <option value="Support">Support</option>
+          <option value="Witch">Witch</option>
+          <option value="Medic">Medic</option>
+          <option value="Captain">Captain</option>
+
         </select>
       </div>
       <div className="flex flex-wrap justify-center">{DisplayBot}</div>
